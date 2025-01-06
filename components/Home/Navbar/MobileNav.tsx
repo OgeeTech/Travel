@@ -12,7 +12,9 @@ const MobileNav = ({closeNav,showNav}:Props) => {
   return (
     <div className=' '>
     {/* overlay */}
-    <div className={`fixed ${navOpen} inset-0 transfom transition-all duration-500 z-[1002] bg-black opacity-70 w-full h-screen`} onClick={closeNav}></div>
+    <div className={`fixed ${navOpen} inset-0 transfom transition-all duration-500 z-[1002] bg-black opacity-70 w-full h-screen`} onClick={closeNav}>
+
+    
    {/* navlinks */}
    <div className={`text-white ${navOpen}fixed justify-center flex flex-col h-full transform transition-all duration-500 
    delay-300 w-[80%] sm:w-[60%] bg-rose-900 space-y-6 z-[1050]`}>
@@ -27,6 +29,7 @@ const MobileNav = ({closeNav,showNav}:Props) => {
         <CgClose onClick={closeNav} className='absolute top-[0.7rem] right-[1.4rem] sm:w-8 sm:h-8 w-6 h-6'/>
    </div>
     </div> 
+    </div>
   )
 }
 

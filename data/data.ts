@@ -2,49 +2,49 @@
 export const destinationData = [
     {
         id: 1,
-        image: "/images/d1.png",
+        image: "/images/d1.jpg",
         country: "France",
         travelers: "150,000",
     },
     {
         id: 2,
-        image: "/images/d2.png",
+        image: "/images/d2.jpg",
         country: "USA",
         travelers: "250,000",
     },
     {
         id: 3,
-        image: "/images/d3.png",
+        image: "/images/d3.jpg",
         country: "Italy",
         travelers: "180,000",
     },
     {
         id: 4,
-        image: "/images/d4.png",
+        image: "/images/d4.jpg",
         country: "Japan",
         travelers: "200,000",
     },
     {
         id: 5,
-        image: "/images/d5.png",
+        image: "/images/d5.jpg",
         country: "Australia",
         travelers: "120,000",
     },
     {
         id: 6,
-        image: "/images/d6.png",
+        image: "/images/d6.jpg",
         country: "Canada",
         travelers: "175,000",
     },
     {
         id: 7,
-        image: "/images/d7.png",
+        image: "/images/d7.jpg",
         country: "Germany",
         travelers: "160,000",
     },
     {
         id: 8,
-        image: "/images/d8.png",
+        image: "/images/d8.jpg",
         country: "Brazil",
         travelers: "140,000",
     },
@@ -53,7 +53,7 @@ export const destinationData = [
 export const hotelsData = [
     {
         id: 1,
-        image: "/images/h1.jpg",
+        image: "/images/h1.png",
         name: "The Grand London Resort and Spa",
         location: "Westminster, London",
         rating: 4.6,
@@ -62,7 +62,7 @@ export const hotelsData = [
     },
     {
         id: 2,
-        image: "/images/h2.jpg",
+        image: "/images/h2.png",
         name: "Barcelona City Suites Deluxe Hotel",
         location: "Ciutat Vella, Barcelona",
         rating: 4.7,
@@ -71,7 +71,7 @@ export const hotelsData = [
     },
     {
         id: 3,
-        image: "/images/h3.jpg",
+        image: "/images/h3.png",
         name: "Times Square Premium Stay Hotel",
         location: "Manhattan, New York",
         rating: 4.9,
@@ -80,7 +80,7 @@ export const hotelsData = [
     },
     {
         id: 4,
-        image: "/images/h4.jpg",
+        image: "/images/h4.png",
         name: "Hilton Roma Luxury Hotel Palace",
         location: "Vaticano Prati, Rome",
         rating: 4.5,

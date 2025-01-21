@@ -4,6 +4,8 @@ import Destination from './Destination/Destination'
 import Hotel from './Hotel/Hotel'
 import WhyChoose from './WhyChoose/WhyChoose'
 import Reviews from './Reviews/Reviews'
+import News from './News/News'
+import NewsLetter from './NewsLetter/NewsLetter'
 const Home = () => {
   return (
     <div className='overflow-hidden '>
@@ -12,6 +14,8 @@ const Home = () => {
       <Hotel/>
       <WhyChoose/>
       <Reviews/>
+      <News/>
+      <NewsLetter/>
     </div>
   )
 }

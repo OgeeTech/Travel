@@ -10,7 +10,8 @@ const Hotel = () => {
         {/* Hotel card */}
         {hotelsData.map((data,i)=>{
           return (
-            <div key={data.id} data-aos='fade-right' data-aos-placement='top-center'
+            <div key={data.id} data-aos='fade-right'
+             data-aos-placement='top-center'
             data-aos-delay={`${i*100}`}
             >
               <HotelCard key={data.id} hotel={data} />

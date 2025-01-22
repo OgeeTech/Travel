@@ -1,3 +1,4 @@
+'use client'
 import React from 'react'
 import Hero from './Hero/Hero'
 import Destination from './Destination/Destination'
@@ -5,7 +6,10 @@ import Hotel from './Hotel/Hotel'
 import WhyChoose from './WhyChoose/WhyChoose'
 import Reviews from './Reviews/Reviews'
 import News from './News/News'
-import NewsLetter from './NewsLetter/NewsLetter'
+import NewsLetter from './NewsLetter/NewsLetter';
+import Footer from './Footer/Footer';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
 const Home = () => {
   return (
     <div className='overflow-hidden '>
@@ -16,6 +20,7 @@ const Home = () => {
       <Reviews/>
       <News/>
       <NewsLetter/>
+      <Footer/>
     </div>
   )
 }

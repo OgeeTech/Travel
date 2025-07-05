@@ -1,4 +1,3 @@
-import Link from 'next/link'
 import React from 'react'
 import { navLinks } from '@/constant/constant'
 import { CgClose } from 'react-icons/cg'
@@ -13,13 +12,17 @@ const MobileNav = ({ closeNav, showNav }: Props) => {
 
   const scrollToSection = (url: string) => {
     closeNav(); // Close mobile nav first
+    
     setTimeout(() => {
       if (url.startsWith('#')) {
         const element = document.querySelector(url);
         if (element) {
-          element.scrollIntoView({ 
-            behavior: 'smooth',
-            block: 'start'
+          const navHeight = 96; // 12vh converted to pixels
+          const elementPosition = element.offsetTop - navHeight;
+          
+          window.scrollTo({
+            top: elementPosition,
+            behavior: 'smooth'
           });
         }
       }
@@ -40,7 +43,7 @@ const MobileNav = ({ closeNav, showNav }: Props) => {
             <button
               key={link.id}
               onClick={() => scrollToSection(link.url)}
-              className='text-white w-fit text-[20px] ml-12 border-b-[1.5px] pb-1 border-white sm:text-[30px] hover:text-yellow-300 transition-colors duration-200'
+              className='text-white w-fit text-[20px] ml-12 border-b-[1.5px] pb-1 border-white sm:text-[30px] hover:text-yellow-300 transition-colors duration-200 cursor-pointer'
             >
               {link.label}
             </button>

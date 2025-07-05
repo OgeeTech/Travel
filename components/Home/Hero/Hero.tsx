@@ -1,6 +1,20 @@
 import SearchBox from '@/components/Helper/SearchBox'
 import React from 'react'
-import Link from 'next/link'
+
+const scrollToSection = (url: string) => {
+  if (url.startsWith('#')) {
+    const element = document.querySelector(url);
+    if (element) {
+      const navHeight = 96; // 12vh converted to pixels
+      const elementPosition = element.offsetTop - navHeight;
+      
+      window.scrollTo({
+        top: elementPosition,
+        behavior: 'smooth'
+      });
+    }
+  }
+};
 
 const Hero = () => {
     return (
@@ -20,12 +34,14 @@ const Hero = () => {
                     </div>
                     {/* search box */}
                  <SearchBox/>
-                 <Link href='#destination' className='rounded px-14 md:px-28 -mt-4 py-2.5 overflow-hidden group bg-rose-600 relative hover:bg-gradient-to-r hover:from-red-500 hover:to-red-400 text-white hover:ring-2 hover:ring-offset-2 
-                 hover:ring-red-400 transition-all ease-out duration-300
-                 '>
+                 <button 
+                    onClick={() => scrollToSection('#destination')}
+                    className='rounded px-14 md:px-28 -mt-4 py-2.5 overflow-hidden group bg-rose-600 relative hover:bg-gradient-to-r hover:from-red-500 hover:to-red-400 text-white hover:ring-2 hover:ring-offset-2 
+                    hover:ring-red-400 transition-all ease-out duration-300 cursor-pointer'
+                 >
                  <span className='absolute right-0 w-0 h-32 -mt-12 transition-all duration-1000 transform translate-12 bg-white opacity-10 rotate-12 group-hover:-translate-x-40 ease'></span>
                         <span className='relative font-bold'> Search</span>
-                 </Link>
+                 </button>
                 </div>
             </div>
         </div>

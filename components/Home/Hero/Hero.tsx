@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 const Hero = () => {
     return (
-        <div className='relative w-full h-[120vh] sm:h-[100vh]'>
+        <div id="home" className='relative w-full h-[120vh] sm:h-[100vh]'>
             {/* overlay */}
             <div className='absolute top-0 left-0 w-full h-full bg-gray-800 opacity-70'></div>
 
@@ -20,7 +20,7 @@ const Hero = () => {
                     </div>
                     {/* search box */}
                  <SearchBox/>
-                 <Link href='#' className='rounded px-14 md:px-28 -mt-4 py-2.5 overflow-hidden group bg-rose-600 relative hover:bg-gradient-to-r hover:from-red-500 hover:to-red-400 text-white hover:ring-2 hover:ring-offset-2 
+                 <Link href='#destination' className='rounded px-14 md:px-28 -mt-4 py-2.5 overflow-hidden group bg-rose-600 relative hover:bg-gradient-to-r hover:from-red-500 hover:to-red-400 text-white hover:ring-2 hover:ring-offset-2 
                  hover:ring-red-400 transition-all ease-out duration-300
                  '>
                  <span className='absolute right-0 w-0 h-32 -mt-12 transition-all duration-1000 transform translate-12 bg-white opacity-10 rotate-12 group-hover:-translate-x-40 ease'></span>

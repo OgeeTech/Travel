@@ -7,7 +7,6 @@ import WhyChoose from './WhyChoose/WhyChoose'
 import Reviews from './Reviews/Reviews'
 import News from './News/News'
 import NewsLetter from './NewsLetter/NewsLetter';
-import Footer from './Footer/Footer';
 import AOS from 'aos';
 import 'aos/dist/aos.css'; 
 
@@ -34,7 +33,6 @@ const Home = () => {
       <Reviews/>
       <News/>
       <NewsLetter/>
-      <Footer/>
     </div>
   )
 }

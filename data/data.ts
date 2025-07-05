@@ -57,7 +57,7 @@ export const hotelsData = [
         name: "The Grand London Resort and Spa",
         location: "Westminster, London",
         rating: 4.6,
-        reviews: "2,345",
+        reviews: 2345,
         price: "72",
     },
     {
@@ -66,7 +66,7 @@ export const hotelsData = [
         name: "Barcelona City Suites Deluxe Hotel",
         location: "Ciutat Vella, Barcelona",
         rating: 4.7,
-        reviews: "1,912",
+        reviews: 1912,
         price: "85",
     },
     {
@@ -75,7 +75,7 @@ export const hotelsData = [
         name: "Times Square Premium Stay Hotel",
         location: "Manhattan, New York",
         rating: 4.9,
-        reviews: "3,420",
+        reviews: 3420,
         price: "95",
     },
     {
@@ -84,7 +84,7 @@ export const hotelsData = [
         name: "Hilton Roma Luxury Hotel Palace",
         location: "Vaticano Prati, Rome",
         rating: 4.5,
-        reviews: "2,876",
+        reviews: 2876,
         price: "68",
     },
 ];
@@ -190,7 +190,7 @@ export const reviewData = [
         id: 8,
         name: "Sophia White",
         review:
-            "Five-star service from start to finish! The dedication and skill of the team made all the difference. Truly an exceptional experience I won’t forget.",
+            "Five-star service from start to finish! The dedication and skill of the team made all the difference. Truly an exceptional experience I won't forget.",
         image: "/images/u2.jpg",
     },
 ];

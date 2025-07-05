@@ -9,7 +9,7 @@ type Props = {
         name: string;
         location: string;
         rating: number;
-        reviews: number; // Changed from string to number
+        reviews: number;
         price: string;
     }
 }
@@ -47,7 +47,7 @@ const HotelCard = ({ hotel }: Props) => {
             {hotel.rating}
           </div>
           <p className="text-sm text-gray-800">Exceptional</p>
-          <p className='text-sm font-bold text-bold text-gray-800'>{hotel.reviews} Review</p>
+          <p className='text-sm font-bold text-bold text-gray-800'>{hotel.reviews.toLocaleString()} Reviews</p>
         </div>
         {/* price */}
         <p className="mt-3 tex-gray-700 font-medium">
